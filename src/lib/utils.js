@@ -16,10 +16,12 @@ const formatCountry = (params) => {
   return p[0] + ", " + p[1];
 };
 
+// return true if the value is present/valid and input text is found
 const contains = (target, lookingFor) => {
   return target && target.indexOf(lookingFor) >= 0;
 };
 
+// filters the input text and returns true if there is a match
 let filterParams = {
   filterOptions: ["contains"],
   textMatcher: ({ value, filterText }) => {
